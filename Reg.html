@@ -1,0 +1,134 @@
+<html>
+    <head>
+        <title>Registration Page</title>
+    </head>
+    <link href="https://fonts.googleapis.com/css2?family=Pushster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <style>
+        #Header{
+            position:relative; 
+            top: -10px;
+            left: -10px;
+            right: 0px;
+            text-align: center;
+            font-family: Pushster;
+            margin:0px -17px 0px 3px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            background-color: black;
+            color: white;
+            border-color: yellow;
+            border-width: 10px;
+            border-style: solid;
+            border-radius: 10px;
+        }
+        #home{
+            float:left;
+            width:33%;;
+        }
+        .navr{
+            float:right;
+            width:67%;
+        }
+        #reg{
+            float:left;
+            width:50%;
+            text-align: center;
+            background-color: white;
+            color: black;
+            font-family: 'Moon Dance';
+        }
+        #Contact{
+            float:right;
+            width:50%;
+        }
+        .blackbg{
+            text-align: center;
+            background-color: black;
+            color: white;
+            font-family: 'Moon Dance';
+        }
+        #home:hover{
+            color: red;
+        }
+        #reg:hover{
+            color: red;
+        }
+        #Contact:hover{
+            color: red;
+        }
+        #regform{
+            text-align: center;
+            font-family: monospace;
+            font-size: 30px;
+        }
+        #form{
+            text-align: center;
+        }
+        label{
+            font-weight: bold;
+            font-size: 20px;
+            margin-right: 10px;
+        }
+        input{
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-radius: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;;
+        }
+        button{
+            margin-top:20px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            width:300px;
+            background-color: rgb(98, 122, 201);
+            border-radius: 10px;
+            font-weight: bold;
+            font-size: 30px;
+            font-family:Staatliches;
+            text-align: center;
+        }
+        select{
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-radius: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;;
+        }
+    </style>
+    <body style="background-color: silver;">
+        <h1 id="Header">Code.Init()</h1>
+        <div id="navbar">
+            <a href="./index.html"><h2 id="home" class="blackbg">HOME</h2></a>
+            <div class="navr">
+                <a href="#"><h2 id="reg">REGISTER HERE</h2></a>
+                <a href="./Contact.html"><h2 id="Contact" class="blackbg">CONTACT US</h2></a>
+            </div>
+        </div>
+        <h2 id="regform">Registration Form</h2>
+        <form id="form">
+            <label style="font-size: 20px;">Name: <input type="text" placeholder="Enter Name here" style="width:30%;"required></label><br>
+            <label style="font-size: 20px;">Roll No: <input type="text" style="width:30%;" required></label><br>
+            <label style="font-size: 20px;">Date of Birth: <input type="date" style="width:30%;" required></label><br>
+            <div style="position: relative; right: 140px;">
+            <label style="font-size: 20px;;">Branch:</label>
+            <select name="branch" style="margin-left:20px;">
+                <option >Select an option</option>
+                <option>Computer Science</option>
+                <option>Civil Engineering</option>
+                <option>Mechanical Engineering</option>
+                <option>Chemical Engineering</option>
+                <option>Production Engineering</option>
+            </select>
+            </div>
+            <div style="position: relative; right: 40px; margin-top:5px; margin-bottom: 5px;">
+            <label style="font-size: 20px;">Sex: <input type="radio" name="Gender" style="margin-left: 30px;"><label>Male</label> <input type="radio" name="Gender"><label>Female</label><input type="radio" name="Gender"><label>Prefer Not to Say</label</label><br>
+            </div>
+            <label style="font-size: 20px;">Phone Number: <input type="text" style="width:30%;"></label><br>
+            <label style="font-size: 20px;">Email ID: <input type="text" style="width:30%;"></label><br>
+            <button type="submit">Register</button>
+        </form>
+    </body>
+</html>
