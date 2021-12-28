@@ -15,11 +15,11 @@
             var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
             var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
             var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-            document.getElementById("demo").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+            document.getElementById("timer").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
             if (distance < 0) 
             {
                 clearInterval(x);
-                document.getElementById("demo").innerHTML = "EXPIRED";
+                document.getElementById("timer").innerHTML = "EXPIRED";
             }
         }, 1000);
     </script>
@@ -86,7 +86,7 @@
             font-size: 40px;
             font-family: Anton;
         }
-        #demo{
+        #timer{
             text-align: center; 
             color: white; 
             background-color: black; 
@@ -111,6 +111,6 @@
             <img src="https://bdmpublications.com/wp-content/uploads/2019/05/history-of-coding-1.jpg" alt="Image from Google" style="float: left; width: 50%;">
             <p id="quote"><em>"Time is a storm in which we all are lost"</em></p>
         </div>
-        <p id="demo"></p>
+        <p id="timer"></p>
     </body>
 </html>
